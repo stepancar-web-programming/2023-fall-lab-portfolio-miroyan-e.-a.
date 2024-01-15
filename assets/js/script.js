@@ -130,6 +130,86 @@
   navArticlesButton.addEventListener('click', function () {
     ArticlesSection.scrollIntoView(true)
   });
-})();
 
+  const navLinks = document.querySelectorAll('.navbar-link');
+
+  const handleNavClick = function (event) {
+    event.preventDefault();
+    const targetId = event.currentTarget.getAttribute('id');
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+      updateBrowserUrl(targetId);
+      setTimeout(() => {
+        event.currentTarget.blur();
+      }, 300);
+    }
+  };
+
+  const handleNavKeyPress = function (event) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      const targetId = event.currentTarget.getAttribute('id');
+      const targetSection = document.getElementById(targetId);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+        updateBrowserUrl(targetId);
+        setTimeout(() => {
+          event.currentTarget.blur();
+        }, 300);
+      }
+    }
+  
+    if (event.key === 'ArrowUp' || event.key === 'ArrowDown') {
+      event.preventDefault();
+      const currentIndex = Array.from(navLinks).indexOf(event.currentTarget);
+      let nextIndex;
+  
+      if (event.key === 'ArrowDown') {
+        nextIndex = currentIndex < navLinks.length - 1 ? currentIndex + 1 : 0;
+      } else {
+        nextIndex = currentIndex > 0 ? currentIndex - 1 : navLinks.length - 1;
+      }
+  
+      navLinks[nextIndex].focus();
+      const targetId = navLinks[nextIndex].getAttribute('id');
+      updateBrowserUrl(targetId);
+    }
+  };
+  
+  const updateBrowserUrl = function (targetId) {
+    const currentPageUrl = window.location.href;
+    const baseUrl = currentPageUrl.split('#')[0];
+    const newUrl = targetId ? `${baseUrl}#${targetId.split('-')[0]}` : baseUrl;
+    window.history.replaceState({}, document.title, newUrl);
+  };
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', handleNavClick);
+    link.addEventListener('keydown', handleNavKeyPress);
+    link.addEventListener('keyup', function (event) {
+      if (event.key === 'Enter') {
+        event.currentTarget.click();
+      }
+    });
+  });
+
+
+  const page2Link = document.getElementById('page2');
+
+  if (page2Link) {
+    page2Link.addEventListener('click', function (event) {
+      event.preventDefault();
+      window.location.href = page2Link.getAttribute('href');
+    });
+
+    page2Link.addEventListener('keydown', handleNavKeyPress);
+    page2Link.addEventListener('keyup', function (event) {
+      if (event.key === 'Enter') {
+        event.currentTarget.click();
+      }
+    });
+  }  
+
+})();
 
