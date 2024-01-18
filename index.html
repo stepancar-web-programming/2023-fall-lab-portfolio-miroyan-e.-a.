@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Elen Miroyan - Web & App Developer</title>
+  <meta name="title" content="Elen Miroyan - Web & App Developer">
+
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+
+</head>
+
+<body>
+
+
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+
+
+
+
+ 
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="170" height="40" alt="Pfolio home">
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggler data-nav-toggle-btn aria-label="Toggle menu">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </button>
+
+      <nav class="navbar" data-navbar role="navigation">
+        <ul class="navbar-list">
+
+          <li>
+            <a  class="navbar-link" id="home-button" role="menuitem" tabindex="0">Home</a>
+          </li>
+
+          <li>
+            <a  class="navbar-link" id="services-button" role="menuitem" tabindex="0">Services</a>
+          </li>
+
+          <li>
+            <a  class="navbar-link" id="personal-button" role="menuitem" tabindex="0">Personal life</a>
+          </li>
+
+          <li>
+            <a  class="navbar-link" id="articles-button" role="menuitem" tabindex="0">Articles</a>
+          </li>
+
+          <li>
+              <a class="navbar-link" id="page2" href="index2.html" >Page 2</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+ 
+      <section class="section hero" id="home-section" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Elen Miroyan</h1>
+
+            <p class="hero-subtitle">
+              Creative Web & App Developer
+            </p>
+
+            <div class="hero-banner">
+              <img src="./assets/images/hero-banner.jpg" width="800" height="800" alt="Elen Miroyan" class="w-100">
+            </div>
+
+            <p class="section-text">
+              Hi, I’m Elen Miroyan and I am a creative web & app developer who dreams about making the world better place by
+              creating captivating products.
+            </p>
+
+
+            <a href="cv.pdf" download="cv.pdf" class="btn has-before">
+              <span class="span">Download My CV</span>
+              <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
+            </a>
+            
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      <section class="service" id="services-section" aria-labelledby="service-label">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <div>
+              <p class="section-subtitle">
+                Services That I Provide
+              </p>
+
+              <h2 class="h2 section-title" id="service-label">Services</h2>
+            </div>
+
+            <p class="section-text">
+              If you're seeking a professional who can seamlessly navigate between technical development tasks and the intricacies of language education, I am well-equipped to meet your unique requirements. Let's collaborate to bring your projects to life and achieve your language-learning goals.            </p>
+
+          </div>
+
+          <div class="slider" data-slider>
+
+            <ul class="slider-container service-list" data-slider-container>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="desktop-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Website Design</h3>
+
+                  <p class="card-text">
+                    I specialize in crafting visually stunning and user-centric websites. From elegant landing pages to intricate web interfaces, my design services focus on creating a digital presence that not only reflects your brand but also ensures an intuitive and delightful user journey.                  </p>
+
+                  <span class="text-lg card-number">01</span>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="podium-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Multimedia Content</h3>
+
+                  <p class="card-text">
+                    Bring your brand to life with compelling multimedia content. I specialize in creating visually striking and engaging material that captivates your audience across various platforms.                  </p>
+
+                  <span class="text-lg card-number">02</span>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="basket-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Tutoring</h3>
+
+                  <p class="card-text">
+                    I am a qualified English and Spanish tutor. I specialize in personalized tutoring, tailoring lessons to meet your specific language-learning objectives and preferences.                   </p>
+
+                  <span class="text-lg card-number">03</span>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="color-filter-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Graphic Design</h3>
+
+                  <p class="card-text">
+                    Whether you're starting from scratch or looking to revamp your current visual assets, let's work together to create designs that leave a lasting impression. Elevate your brand with thoughtful and impactful graphic design.                  </p>
+
+                  <span class="text-lg card-number">04</span>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="megaphone-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">SMM Marketing</h3>
+
+                  <p class="card-text">
+                    I provide the expertise to drive your brand forward in today's competitive landscape. Let's collaborate to create a tailored marketing plan that aligns with your business goals.                  </p>
+
+                  <span class="text-lg card-number">05</span>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="chatbubbles-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Copywriting</h3>
+
+                  <p class="card-text">
+                    I can craft words that not only convey your message but also inspire action. Let's collaborate to create copy that leaves a lasting impression and drives results for your brand.                  </p>
+
+                  <span class="text-lg card-number">06</span>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <div class="slider-controls">
+              <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+
+              <button class="slider-control next" data-slider-next aria-label="Slide to next item">
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+  
+
+
+
+      <section class="personallife" id="personal-section" aria-labelledby="personallife-label">
+
+        <div class="title-wrapper container">
+
+          <div>
+            <p class="section-subtitle" id="personallife-label">Social Media</p>
+
+            <h2 class="h2 section-title">Personal Life</h2>
+          </div>
+
+          <p class="section-text">
+            If you see this, please give me some likes on Instagram.
+          </p>
+
+        </div>
+
+        <div class="slider" data-slider>
+
+          <ul class="slider-container" data-slider-container>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/personal-1.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Post 1</h3>
+
+                  <p class="card-text">Abu Dhabi</p>
+                </div>
+
+                <a href="https://www.instagram.com/p/CpU3FjSsOFV/?img_index=1" class="layer-link"></a>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/personal-2.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Post 2</h3>
+
+                  <p class="card-text">Saint Petersburg</p>
+                </div>
+
+                <a href="https://www.instagram.com/p/CdGuo--uZng/?img_index=1" class="layer-link"></a>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/personal-3.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Post 3</h3>
+
+                  <p class="card-text">Yerevan</p>
+                </div>
+
+                <a href="https://www.instagram.com/p/CDhXoL9MSzw/" class="layer-link"></a>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/personal-4.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Post 4</h3>
+
+                  <p class="card-text">Hurghada</p>
+                </div>
+
+                <a href="https://www.instagram.com/p/CxGkrWRMJTn/?img_index=1" class="layer-link"></a>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <div class="slider-controls">
+            <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
+              <div class="line"></div>
+              <div class="arrow"></div>
+            </button>
+
+            <button class="slider-control next" data-slider-next aria-label="Slide to next item">
+              <div class="line"></div>
+              <div class="arrow"></div>
+            </button>
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <section class="section blog" id="articles-section" aria-labelledby="blog-label">
+        <div class="container">
+
+          <p class="section-subtitle" id="blog-label">What I read in past few days</p>
+
+          <h2 class="h2 section-title">Articles</h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
+                  <img src="./assets/images/blog-1.jpg" width="700" height="470" loading="lazy"
+                    alt="An efficient way of text-based emotion analysis from social media using LRA-DNN" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <time class="time" datetime="2023-11-13">
+                    <span class="span text-lg">13</span>
+                    Nov 2023
+                  </time>
+
+                  <div>
+                    <h3 class="h3 card-title">An efficient way of text-based emotion analysis from social media using LRA-DNN</h3>
+
+                    <p class="card-text">
+                      Emotion analysis, Sentiment analysis, Deep neural network, Leaky Relu, Social media, Predictive analytic
+                    </p>
+
+                    <a href="https://www.sciencedirect.com/science/article/pii/S2772528622000103" class="btn has-before">
+                      <span class="span">Read more</span>
+
+                      <ion-icon name="arrow-forward"></ion-icon>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder">
+                  <video width="700" height="470" controls>
+                    <source src="./assets/images/video-2.mp4" type="video/mp4">
+                  </video>
+                </figure>                
+
+                <div class="card-content">
+
+                  <time class="time" datetime="2023-11-11">
+                    <span class="span text-lg">11</span>
+                    Nov 2023
+                  </time>
+
+                  <div>
+                    <h3 class="h3 card-title">Text-Based Emotion Recognition Using Deep Learning Approach</h3>
+
+                    <p class="card-text">
+                      Emotion analysis, Sentiment analysis, Deep neural network, Leaky Relu, Social media, Predictive analytic
+                    </p>
+
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9427219/" class="btn has-before">
+                      <span class="span">Read more</span>
+
+                      <ion-icon name="arrow-forward"></ion-icon>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Location</p>
+        </li>
+
+        <li>
+          <a class="footer-link">Saint Petersburg, Russia</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </footer>
+
+
+
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
